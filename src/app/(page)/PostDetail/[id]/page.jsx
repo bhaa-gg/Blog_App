@@ -5,6 +5,7 @@ import React from 'react'
 const page = async ({ params }) => {
     const { id } = params
 
+
     const specific_Post = async () => {
         return await axios.get(`https://jsonplaceholder.typicode.com/posts/${id}`).then(({ data }) => data).catch(err => err)
     }
